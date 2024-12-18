@@ -1,18 +1,36 @@
-@import './header.scss';
-@import './vite-promo.scss';
+// componens scss imports
+@import './components/header.scss';
+@import './components/footer.scss';
+@import './components/hero.scss';
+@import './components/gallery.scss';
+@import './components/privacyPolicy.scss';
+@import './components/reviews.scss';
+@import './components/aboutUs.scss';
+@import './components/FAQ.scss';
+@import './components/features.scss';
+@import './components/termsConditions.scss';
+// font imports
+@import url('@fontsource/grandstander/400.css');
+@import url('@fontsource/grandstander/500.css');
+@import url('@fontsource/grandstander/600.css');
+@import url('@fontsource/inter/400.css');
+@import url('@fontsource/akronim/400.css');
+// mixins and variables imports
+@import './common/_vars.scss';
+@import './common/_mixins.scss';
+// reset imports
+@import './common/_reset.scss';
+
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
+  font-family: 'Grandstander', 'Inter', 'Akronim' sans-serif;
+  font-size: 18px;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+
+
