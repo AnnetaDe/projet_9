@@ -21,7 +21,6 @@
 // reset imports
 @import './common/_reset.scss';
 
-
 :root {
   font-family: 'Grandstander', 'Inter', 'Akronim' sans-serif;
   font-size: 18px;
@@ -32,80 +31,123 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.global-wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+@media screen and (min-width: 1198.98px) {
+  .global-wrapper {
+    max-width: 1200px;
+  }
+}
+.header {
+  width: 100%;
+  outline: 1px solid green;
+  padding: 0 72px;
+  position: fixed;
+  margin: 16px 0;
+  .nav-list {
+    border-radius: 18px;
+    padding: 2px 30px 2px 20px;
+    background-color: $_header_color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1e1e1e;
+    font-family: Grandstander;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .favicon {
+    width: 87px;
+    height: 87px;
+    background-color: blueviolet;
+  }
+}
 body {
   display: block;
-  margin: 0 auto;
-   .section-title {
-      font-family: 'Grandstander';
-      font-weight: 700;
-      color: $_black_text;
-      @include font(32, 24)
-    }
-  @include media(to-desktop) {
-    .header {
-      background-color: $_header_color;
-      border-radius: 18px;
-      padding: 2px 30px 2px 20px;
-      width: 100%;
-      position: fixed;
-      margin:16px 0;
-      .nav-list {
-        display: flex;
-        justify-content: space-between;
+
+  .section-title {
+    font-family: 'Grandstander';
+    font-weight: 700;
+    color: $_black_text;
+    @include font(32, 24);
+  }
+
+  .hero {
+    background-color: $_bg_color_turquoise;
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        font-family: 'Akronim';
+        @include font(96, 24);
+        color: $_accent_orange;
+        margin-bottom: 56px;
+        margin-top: 196px;
+      }
+      .hero-title-container {
+        width: 314px;
+        margin-bottom: 32px;
+
+        .hero-title {
+          font-family: 'Grandstander';
+          font-weight: 500;
+          color: $_black_text;
+          @include font(24, 30);
+        }
+      }
+      .hero-button {
+        display: inline-flex;
         align-items: center;
-        color: #1E1E1E;
-        font-family: Grandstander;
-        font-size: 20px;
-        font-weight: 400;
-      }
-      .favicon {
-        width: 87px;
-        height: 87px;
-        background-color: blueviolet;
+        padding: 8px;
+        border-radius: 6px;
+        background: #fff;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+        border: transparent;
+        width: 156px;
+        height: 41px;
+        font-family: 'Inter';
+        @include font(14, 16);
+        margin-bottom: 173px;
       }
     }
-    .hero {
-      background-color: $_bg_color_turquoise;
-      .hero-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        h1 {
-          font-family: 'Akronim';
-          @include font(96, 24);
-          color: $_accent_orange;
-          margin-bottom: 56px;
-          margin-top: 196px;
-        }
-        .hero-title-container {
-          width: 314px;
-          margin-bottom: 32px;
-
-          .hero-title {
-            font-family: 'Grandstander';
-            font-weight: 500;
-            color: $_black_text;
-            @include font(24, 30)
-          }
-        }
-        .hero-button {
-          display: inline-flex;
-          align-items: center;
-          padding: 8px;
-          border-radius: 6px;
-          background: #FFF;
-          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
-          border: transparent;
-          width: 156px;
-          height: 41px;
-          font-family: 'Inter';
-          @include font(14, 16);
-          margin-bottom: 173px;
-        }
-
+  }
+  .gallery {
+    background: $_bg_gradient;
+    .global-wrapper .section-title {
+      padding: 0 72px;
+    }
+    .gallery-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 33px;
+    }
+  }
+  .about-the-game {
+    background-color: $_bg_color_yellow;
+    .global-wrapper {
+      padding: 0 72px;
+      .about-the-game-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 33px;
       }
+    }
+  }
 
+  .features {
+    background: $_bg_gradient;
+    .global-wrapper {
+      padding: 0 72px;
+      .features-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 55px;
+      }
     }
   }
 }
