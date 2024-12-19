@@ -1,17 +1,13 @@
-$_bg_color_turquoise: #48EBE2;
-$_bg_color_yellow:#E1E023;
-$_bg_gradient: linear-gradient(90deg, #48EBE2 0%, #E1E023 100%);
-$_header_color: #13C2B9;
-
+$_bg_color_turquoise: #48ebe2;
+$_bg_color_yellow: #e1e023;
+$_bg_gradient: linear-gradient(182deg, $_bg_color_turquoise, $_bg_color_yellow);
+$_header_color: #13c2b9;
 
 // text color mobile and desktop
-$_white_text:#F1F1F1;
-$_black_text:#000000;
+$_white_text: #f1f1f1;
+$_black_text: #000000;
 
 // accent colors for elements
-$_accent_green: #62BC05;
-$_accent_dark_green:#2B7908;
-$_accent_orange: #E05423;
-
-
-
+$_accent_green: #62bc05;
+$_accent_dark_green: #2b7908;
+$_accent_orange: #e05423;
