@@ -1,6 +1,11 @@
 $_bg_color_turquoise: #48ebe2;
 $_bg_color_yellow: #e1e023;
 $_bg_gradient: linear-gradient(182deg, $_bg_color_turquoise, $_bg_color_yellow);
+$_bg_gradient_reverse: linear-gradient(
+  182deg,
+  $_bg_color_yellow,
+  $_bg_color_turquoise
+);
 $_header_color: #13c2b9;
 
 // text color mobile and desktop
