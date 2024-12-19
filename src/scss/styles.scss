@@ -34,16 +34,21 @@
 
 body {
   display: block;
-  justify-content: center;
-
+  margin: 0 auto;
+   .section-title {
+      font-family: 'Grandstander';
+      font-weight: 700;
+      color: $_black_text;
+      @include font(32, 24)
+    }
   @include media(to-desktop) {
     .header {
-      margin-left: 73px;
-      margin-right: 73px;
       background-color: $_header_color;
       border-radius: 18px;
       padding: 2px 30px 2px 20px;
-
+      width: 100%;
+      position: fixed;
+      margin:16px 0;
       .nav-list {
         display: flex;
         justify-content: space-between;
@@ -58,34 +63,21 @@ body {
         height: 87px;
         background-color: blueviolet;
       }
-
-
     }
-
-    .section-title {
-      font-family: 'Grandstander';
-      font-weight: 700;
-      color: $_black_text;
-      @include font(32, 24)
-    }
-
     .hero {
       background-color: $_bg_color_turquoise;
-
       .hero-content {
         display: flex;
         flex-direction: column;
-
         align-items: center;
         justify-content: center;
-
         h1 {
           font-family: 'Akronim';
           @include font(96, 24);
           color: $_accent_orange;
           margin-bottom: 56px;
+          margin-top: 196px;
         }
-
         .hero-title-container {
           width: 314px;
           margin-bottom: 32px;
@@ -96,10 +88,7 @@ body {
             color: $_black_text;
             @include font(24, 30)
           }
-
-
         }
-
         .hero-button {
           display: inline-flex;
           align-items: center;
@@ -112,13 +101,11 @@ body {
           height: 41px;
           font-family: 'Inter';
           @include font(14, 16);
+          margin-bottom: 173px;
         }
 
       }
 
     }
-
-
   }
-
 }
