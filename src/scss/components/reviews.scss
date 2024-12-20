@@ -1,6 +1,6 @@
 .reviews {
   background: #48ebe2;
-  padding: 24px 16px 24px 16px;
+  padding: 24px 16px 20px 16px;
   width: 320px;
   height: 401px;
   display: flex;
@@ -30,9 +30,6 @@
 }
 
 .swiper-slide {
-  background-image: url(../../img/reviews/background.png);
-  background-position: center bottom 24px;
-  background-repeat: no-repeat;
   width: auto;
   margin: 0 20px;
   display: flex;
@@ -41,6 +38,9 @@
 }
 
 .item-reviews {
+  background-image: url(../../img/reviews/background.png);
+  background-position: center bottom 38px;
+  background-repeat: no-repeat;
   font-family: "Grandstander", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -57,13 +57,17 @@
     left: 0;
     right: 0;
     margin: 0;
-    padding: 32px;
+    padding: 50px;
+}
+.item-reviews p {
+  margin: 0 auto;
+  width: 180px;
 }
 
 .item-reviews .triangle {
   position: absolute;
   right: 40px;
-  bottom: -3px;
+  bottom: 10px;
   width: 33px;
   height: 41px;
   background-image: url(../../img/reviews/mini.png);
@@ -103,12 +107,93 @@
   justify-content: center;
   align-items: center;
   margin: 0;
-  width: 24px;
-  height: 24px;
   background: none;
   cursor: pointer;
 }
-.swiper-pagination-bullet .icon {
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+.swiper-button-prev .icon,
+.swiper-button-next .icon {
   width: 8px;
   height: 14px;
+}
+.swiper-button-prev {
+  left: 0 !important;
+}
+.swiper-button-next {
+  right: 0 !important;
+}
+.list-reviews {
+  display: none;
+}
+
+.swiper-initialized .list-reviews {
+  display: flex;
+}
+
+@include media(desktop) {
+  .reviews {
+    min-width: 1200px;
+    width: 100%;
+    height: 100%;
+    padding: 60px 72px;
+  }
+  .swiper-button-prev .icon,
+  .swiper-button-next .icon {
+    display: none;
+  }
+    .swiper-wrapper {
+      display: flex;
+    }
+
+    .swiper-slide {
+      width: auto; // Налаштовує ширину для десктопу
+      margin: 20px;
+    }
+  .title-text {
+      font-size: 32px;
+      margin-bottom: 32px;
+  }
+  .list-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .item-reviews {
+    background-image: url(../../img/reviews/background-desktop.png);
+    background-position: center bottom 68px;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    line-height: 1.22222;
+    width: 360px;
+    height: 356px;
+    margin: 0;
+  }
+    .item-reviews p {
+      margin: 0 auto;
+      width: 280px;
+    }
+    .item-reviews h3 {
+      padding: 80px;
+    }
+    .item-reviews .triangle {
+      right: 40px;
+      bottom: 40px;
+      width: 51px;
+      height: 56px;
+      background-image: url(../../img/reviews/mini-desktop.png);
+    }
+    .green-box {
+      width: 115px;
+      height: 116px;
+    }
+    .green-box img {
+      width: 81px;
+      height: 104px;
+    }
 }
