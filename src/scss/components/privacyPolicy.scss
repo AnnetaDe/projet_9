@@ -9,6 +9,7 @@
   width: 121px;
   height: 41px;
   background: #e1e023;
+  margin-left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,5 +57,27 @@ gap: 4px;
 
 
 @include media(desktop) {
-  
+  .privacy-terms {
+    padding: 32px 72px 24px 72px;
+  }
+  .title-text {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .privacy-text p {
+      font-size: 20px;
+      margin-bottom: 24px;
+  }
+  .privacy-text p span {
+          font-size: 24px;
+  }
+  .text-and-list p {
+              margin-bottom: 0;
+  }
+  .privacy-text ul {
+      font-size: 20px;
+      padding: 0 28px;
+  }
+
 }

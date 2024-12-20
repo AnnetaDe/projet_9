@@ -7,7 +7,7 @@
   font-size: 14px;
   line-height: 1.28571;
   color: #000;
-  margin: 0 auto;
+  margin-top: -2px;
 }
 
 .footer-link {
@@ -32,8 +32,15 @@
   .footer {
     width: 100%;
     min-width: 1200px;
+    padding: 15px 72px 40px 72px;
   }
   .footer-link {
-    left: 0;
+    text-align: end;
+  }
+  .footer-item {
+    font-size: 20px;
+  }
+  .footer-text {
+    font-size: 16px;
   }
 }
