@@ -1,0 +1,114 @@
+.reviews {
+  background: #48ebe2;
+  padding: 24px 16px 24px 16px;
+  width: 320px;
+  height: 401px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-text {
+  font-family: "Grandstander", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33333;
+  text-align: start;
+  margin-bottom: 0;
+}
+
+.swiperGallery {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide {
+  background-image: url(../../img/reviews/background.png);
+  background-position: center bottom 24px;
+  background-repeat: no-repeat;
+  width: auto;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-reviews {
+  font-family: "Grandstander", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  width: 230px;
+  height: 264px;
+  line-height: 1.28571;
+  text-align: center;
+  position: relative;
+}
+.item-reviews h3 {
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 32px;
+}
+
+.item-reviews .triangle {
+  position: absolute;
+  right: 40px;
+  bottom: -3px;
+  width: 33px;
+  height: 41px;
+  background-image: url(../../img/reviews/mini.png);
+}
+
+.green-box {
+  width: 74px;
+  height: 87px;
+  border-radius: 100%;
+  background-color: #62bc05;
+  margin-top: 9px;
+  margin-bottom: 7px;
+  position: relative;
+}
+.green-box img {
+  display: block;
+  width: 51px;
+  height: 77px;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.swiper-pagination {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.swiper-pagination-bullet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  background: none;
+  cursor: pointer;
+}
+.swiper-pagination-bullet .icon {
+  width: 8px;
+  height: 14px;
+}
