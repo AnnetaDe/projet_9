@@ -23,9 +23,6 @@
   "author": "Andrii Kyrylenko <z9877969@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "@fontsource/akronim": "^5.1.0",
-    "@fontsource/grandstander": "^5.1.1",
-    "@fontsource/inter": "^5.1.0",
     "modern-normalize": "^3.0.1",
     "swiper": "^11.1.15",
     "vite-plugin-full-reload": "^1.0.5",
