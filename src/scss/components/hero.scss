@@ -1,0 +1,116 @@
+.hero {
+  background: $_bg_color_turquoise;
+  background-size: contain;
+  .global-wrapper {
+    padding: 85px 1px 1px 1px;
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      background: url('../img/hero/mob/man.png') no-repeat left bottom,
+        url('../img/hero/mob/girl.png') no-repeat right bottom;
+      .hero-center {
+        justify-items: center;
+
+        h1 {
+          font-family: 'Akronim';
+          @include font(48, 24);
+          color: $_accent_orange;
+          margin-bottom: 16px;
+          margin-top: 16px;
+        }
+        .hero-title-container {
+          width: 154px;
+          margin-bottom: 32px;
+
+          .hero-title {
+            font-family: 'Grandstander';
+            font-weight: 500;
+            color: $_black_text;
+            @include font(14, 18);
+          }
+        }
+        .hero-button {
+          display: inline-flex;
+          align-items: center;
+          text-align: center;
+          padding: 4px;
+          border-radius: 6px;
+          background: #fff;
+          border: transparent;
+          width: 121px;
+          height: 41px;
+          font-family: 'Inter';
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          @include font(14, 16);
+          img {
+            margin-left: 2px;
+          }
+        }
+        .hero-button:hover {
+          background: #34a853;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1198.98px) {
+  .hero {
+    background: url('../img/hero/1x/palm_left.png') no-repeat left,
+      url('../img/hero/1x/palm_right.png') no-repeat right, $_bg_color_turquoise;
+    background-size: contain;
+    .global-wrapper {
+      padding: 72px 72px 0 72px;
+      .hero-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        background: url('../img/hero/1x/man.png') no-repeat left bottom,
+          url('../img/hero/1x/girl.png') no-repeat right bottom;
+        .hero-center {
+          grid-column: 2;
+          justify-items: center;
+
+          h1 {
+            font-family: 'Akronim';
+            @include font(96, 24);
+            color: $_accent_orange;
+            margin-bottom: 56px;
+            margin-top: 196px;
+          }
+          .hero-title-container {
+            width: 314px;
+            margin-bottom: 32px;
+
+            .hero-title {
+              font-family: 'Grandstander';
+              font-weight: 500;
+              color: $_black_text;
+              @include font(24, 30);
+            }
+          }
+          .hero-button {
+            display: inline-flex;
+            align-items: center;
+            text-align: center;
+            padding: 8px;
+            border-radius: 6px;
+            background: #fff;
+            border: transparent;
+            width: 156px;
+            height: 41px;
+            font-family: 'Inter';
+            @include font(14, 16);
+            margin-bottom: 172px;
+            img {
+              margin-left: 18px;
+            }
+          }
+          .hero-button:hover {
+            background: #34a853;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+.features {
+  background: $_bg_gradient_reverse;
+}
+.global-wrapper {
+  padding: 24px 16px;
+}
+.features-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+.features-item-content {
+  display: flex;
+  gap: 8px;
+}
+.features-item {
+  display: flex;
+  gap: 8px;
+
+  .features-img-container {
+    outline: 1px solid red;
+    width: 100px;
+    margin-bottom: 18px;
+    picture {
+      display: block;
+      width: 100%;
+      object-fit: fill;
+    }
+    .features-svg {
+      display: none;
+    }
+  }
+  p {
+    max-width: 195px;
+    font-family: 'Grandstander';
+    font-weight: 400;
+    @include font(18, 22);
+    text-align: left;
+  }
+}
+.features-item:nth-child(even) {
+  .features-img-container {
+    order: 2;
+  }
+  p {
+    order: 1;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1198.98px) {
+  .features {
+    background: $_bg_gradient_reverse;
+  }
+
+  .global-wrapper {
+    padding: 32px 72px 60px 72px;
+  }
+  .features-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 55px;
+  }
+  .features-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .features-item {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .features-img-container {
+      display: block;
+      position: relative;
+      outline: 1px solid red;
+      width: 312px;
+      height: 260px;
+      margin-bottom: 12px;
+      picture {
+        display: block;
+        position: absolute;
+        object-fit: cover;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+      }
+      .features-svg {
+        display: block;
+        position: absolute;
+        object-fit: cover;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    p {
+      max-width: 90%;
+      font-family: 'Grandstander';
+      font-weight: 400;
+      @include font(18, 22);
+      text-align: center;
+    }
+  }
+  .features-item:nth-of-type(even) {
+    .features-item-content {
+      .features-img-container {
+        order: 1;
+      }
+      p {
+        order: 2;
+        text-align: center;
+      }
+    }
+  }
+}
