@@ -10,7 +10,7 @@
 }
 
 .title-text {
-  font-family: "Grandstander", sans-serif;
+  font-family: 'Grandstander', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33333;
@@ -40,10 +40,10 @@
 }
 
 .item-reviews {
-  background-image: url(../../img/reviews/background.png);
+  background-image: url('../img/reviews/background.png');
   background-position: center bottom 38px;
   background-repeat: no-repeat;
-  font-family: "Grandstander", sans-serif;
+  font-family: 'Grandstander', sans-serif;
   font-weight: 400;
   font-size: 14px;
   width: 230px;
@@ -57,13 +57,13 @@
 
 }
 .item-reviews h3 {
-    font-weight: 600;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-    padding: 50px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 50px;
 }
 .item-reviews p {
   margin: 0 auto;
@@ -76,7 +76,7 @@
   bottom: 10px;
   width: 33px;
   height: 41px;
-  background-image: url(../../img/reviews/mini.png);
+  background-image: url('../img/reviews/mini.png');
 }
 
 .green-box {
@@ -115,55 +115,60 @@
 
 @include media(desktop) {
   .reviews {
-    min-width: 1200px;
-    width: 100%;
-    height: 100%;
-    padding: 60px 72px;
-  }
+      min-width: 1200px;
+      width: 100%;
+      height: 100%;
+      padding: 60px 72px;
+    }
+
     .title-text {
       font-size: 32px;
       margin-bottom: 32px;
     }
-  .swiper-button-prev .icon,
-  .swiper-button-next .icon {
-    display: none;
-  }
 
-.swiperGallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* Три колонки */
-  grid-template-rows: repeat(2, 1fr);
-  /* Два рядки */
-  gap: 4px;
-  /* Відстань між елементами */
-  height: auto;
-}
+    .swiper-button-prev .icon,
+    .swiper-button-next .icon {
+      display: none;
+    }
 
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 360px;
-  height: 356px;
-}
+    .swiperGallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /* Три колонки */
+      grid-template-rows: repeat(2, 1fr);
+      /* Два рядки */
+      gap: 4px;
+      /* Відстань між елементами */
+      height: auto;
+    }
 
-  .item-reviews {
-    background-image: url(../../img/reviews/background-desktop.png);
-    background-position: center bottom 68px;
-    background-repeat: no-repeat;
-    font-size: 18px;
-    line-height: 1.22222;
-    width: 360px;
-    height: 356px;
-    margin: 0 auto;
-  }
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 360px;
+      height: 356px;
+    }
+
+    .item-reviews {
+      background-image: url('../img/reviews/background-desktop.png');
+      background-position: center bottom 68px;
+      background-repeat: no-repeat;
+      font-size: 18px;
+      line-height: 1.22222;
+      width: 360px;
+      height: 356px;
+      margin: 0 auto;
+    }
+
     .item-reviews p {
       width: 280px;
     }
+
     .item-reviews h3 {
       padding: 80px;
     }
+
     .item-reviews .triangle {
       right: 40px;
       bottom: 40px;
@@ -171,10 +176,12 @@
       height: 56px;
       background-image: url(../../img/reviews/mini-desktop.png);
     }
+
     .green-box {
       width: 115px;
       height: 116px;
     }
+
     .green-box img {
       width: 81px;
       height: 104px;
