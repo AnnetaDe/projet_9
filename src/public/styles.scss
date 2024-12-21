@@ -1,0 +1,61 @@
+// componens scss imports
+@import '../scss/components/header.scss';
+@import '../scss/components/footer.scss';
+@import '../scss/components/hero.scss';
+@import '../scss/components/gallery.scss';
+@import '../scss/components/privacyPolicy.scss';
+@import '../scss/components/reviews.scss';
+@import '../scss/components/aboutTheGame.scss';
+@import '../scss/components/FAQ.scss';
+@import '../scss/components/features.scss';
+@import '../scss/components/termsConditions.scss';
+// font imports
+// @import url('@fontsource/grandstander/400.css');
+// @import url('@fontsource/grandstander/500.css');
+// @import url('@fontsource/grandstander/600.css');
+// @import url('@fontsource/inter/400.css');
+// @import url('@fontsource/akronim/400.css');
+// mixins and variables imports
+// @import './common/_vars.scss';
+// @import './common/_mixins.scss';
+// // reset imports
+// @import './common/_reset.scss';
+
+:root {
+  font-family: 'Grandstander', 'Inter', 'Akronim' sans-serif;
+  font-size: 18px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+.global-wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-snap-stop: always;
+}
+.section-title {
+  font-family: 'Grandstander';
+  font-weight: 700;
+  color: $_black_text;
+  @include font(18, 24);
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1198.98px) {
+  .global-wrapper {
+    max-width: 1200px;
+  }
+  .section-title {
+    font-family: 'Grandstander';
+    font-weight: 500;
+    color: $_black_text;
+    @include font(32, 24);
+    margin-bottom: 32px;
+  }
+}
