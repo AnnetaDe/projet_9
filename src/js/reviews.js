@@ -1,46 +1,41 @@
-let swiper;
+document.addEventListener('DOMContentLoaded', () => {
+  let swiper; // Зберігаємо екземпляр Swiper
 
-function initSwiper() {
-  const swiperContainer = document.querySelector('.swiperGallery');
-  const listReviews = document.querySelector('.list-reviews');
+  function initSwiper() {
+    // Якщо ширина менша за 1200px, ініціалізуємо Swiper
+    if (window.innerWidth < 1200) {
+      if (!swiper) { // Перевіряємо, чи Swiper ще не створений
+        swiper = new Swiper('.swiperGallery', {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          centeredSlides: true,
+          initialSlide: 0,
+          slideToClickedSlide: true,
+          loop: false,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
 
-  if (window.innerWidth < 1200) {
-    if (!swiper) {
-      swiperContainer.classList.add('swiper-initialized');
-      listReviews.classList.add('swiper-wrapper');
+        });
+      }
+    } else {
+      // Якщо ширина >= 1200px і Swiper існує, зупиняємо його
+      if (swiper) {
+        swiper.destroy(true, true); // Зупиняємо та очищаємо Swiper
+        swiper = null; // Скидаємо змінну
 
-      swiper = new Swiper('.swiperGallery', {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        centeredSlides: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        loop: true,
-      });
+        gallery.style.display = 'grid';
+      gallery.style.gridTemplateColumns = 'repeat(3, 1fr)';
+      gallery.style.gridTemplateRows = 'repeat(2, 1fr)';
+      }
     }
-  } else {
-    if (swiper) {
-      swiper.destroy(true, true);
-      swiper = null;
-      swiperContainer.classList.remove('swiper-initialized');
-    }
-
-    listReviews.classList.remove('swiper-wrapper');
-    listReviews.style.display = 'flex';
-    listReviews.style.flexWrap = 'wrap';
-    document.querySelectorAll('.swiper-slide').forEach((slide) => {
-      slide.style.width = 'auto';
-      slide.style.height = 'auto';
-      slide.style.position = 'static';
-    });
   }
-}
 
-initSwiper();
-window.addEventListener('resize', initSwiper);
+  // Ініціалізація при завантаженні сторінки
+  initSwiper();
+
+  // Відстеження зміни розміру вікна
+  window.addEventListener('resize', initSwiper);
+});
+
