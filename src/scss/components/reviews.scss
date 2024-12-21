@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .title-text {
@@ -27,11 +28,12 @@
 .swiper-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .swiper-slide {
   width: auto;
-  margin: 0 20px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,6 +51,10 @@
   line-height: 1.28571;
   text-align: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 .item-reviews h3 {
     font-weight: 600;
@@ -91,25 +97,6 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.swiper-pagination {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  transform: translateY(-50%);
-  z-index: 10;
-}
-.swiper-pagination-bullet {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  background: none;
-  cursor: pointer;
-}
 .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none;
@@ -125,13 +112,6 @@
 .swiper-button-next {
   right: 0 !important;
 }
-.list-reviews {
-  display: none;
-}
-
-.swiper-initialized .list-reviews {
-  display: flex;
-}
 
 @include media(desktop) {
   .reviews {
@@ -140,30 +120,34 @@
     height: 100%;
     padding: 60px 72px;
   }
+    .title-text {
+      font-size: 32px;
+      margin-bottom: 32px;
+    }
   .swiper-button-prev .icon,
   .swiper-button-next .icon {
     display: none;
   }
-    .swiper-wrapper {
-      display: flex;
-    }
 
-    .swiper-slide {
-      width: auto; // Налаштовує ширину для десктопу
-      margin: 20px;
-    }
-  .title-text {
-      font-size: 32px;
-      margin-bottom: 32px;
-  }
-  .list-reviews {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+.swiperGallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Три колонки */
+  grid-template-rows: repeat(2, 1fr);
+  /* Два рядки */
+  gap: 4px;
+  /* Відстань між елементами */
+  height: auto;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 360px;
+  height: 356px;
+}
+
   .item-reviews {
     background-image: url(../../img/reviews/background-desktop.png);
     background-position: center bottom 68px;
@@ -172,10 +156,9 @@
     line-height: 1.22222;
     width: 360px;
     height: 356px;
-    margin: 0;
+    margin: 0 auto;
   }
     .item-reviews p {
-      margin: 0 auto;
       width: 280px;
     }
     .item-reviews h3 {
