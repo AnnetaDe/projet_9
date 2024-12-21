@@ -1,2 +1,2 @@
 import './js/reviews';
-import './scss/styles.scss';
+import '../src/public/styles.scss';
