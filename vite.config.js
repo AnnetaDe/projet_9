@@ -15,17 +15,21 @@ export default defineConfig(({ command }) => {
     build: {
       sourcemap: true,
       rollupOptions: {
-        input: glob.sync('./src/*.html'),
+        input: {
+          main: '/src/index.html', // Main entry point
+
+        },
         output: {
           manualChunks(id) {
             if (id.includes('node_modules')) {
               return 'vendor';
             }
           },
+          assetFileNames: 'assets/[name]-[hash][extname]',
           entryFileNames: 'commonHelpers.js',
         },
       },
-      outDir: '../dist',
+      outDir: 'dist',
     },
     plugins: [
       injectHTML(),
