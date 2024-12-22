@@ -22,7 +22,6 @@ export default defineConfig(({ command }) => {
               return 'vendor';
             }
           },
-          assetFileNames: 'assets/[name]-[hash][extname]',
           entryFileNames: 'commonHelpers.js',
         },
       },
