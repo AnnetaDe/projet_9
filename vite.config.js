@@ -7,7 +7,6 @@ import { globalStylesOptions } from './global.styles';
 
 export default defineConfig(({ command }) => {
   return {
-
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
@@ -52,7 +51,6 @@ export default defineConfig(({ command }) => {
           additionalData: globalStylesOptions,
         },
       },
-      devSourcemap: true,
     },
   };
 });
