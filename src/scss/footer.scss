@@ -1,0 +1,46 @@
+.footer {
+  width: 320px;
+  padding: 24px 16px;
+  background: #e1e023;
+  font-family: "Grandstander", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: #000;
+  margin-top: -2px;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 24px;
+}
+
+.footer-item {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.footer-text {
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@include media(desktop) {
+  .footer {
+    width: 100%;
+    min-width: 1200px;
+    padding: 15px 72px 40px 72px;
+  }
+  .footer-link {
+    text-align: end;
+  }
+  .footer-item {
+    font-size: 20px;
+  }
+  .footer-text {
+    font-size: 16px;
+  }
+}

@@ -1,20 +1,20 @@
 // componens scss imports
-@import './components/header.scss';
-@import './components/footer.scss';
-@import './components/hero.scss';
-@import './components/gallery.scss';
-@import './components/privacyPolicy.scss';
-@import './components/reviews.scss';
-@import './aboutTheGame.scss';
-@import './components/FAQ.scss';
-@import './components/features.scss';
-@import './components/termsConditions.scss';
+@import 'header.scss';
+@import 'footer.scss';
+@import 'hero.scss';
+@import 'gallery.scss';
+@import 'privacyPolicy.scss';
+@import 'reviews.scss';
+@import 'aboutTheGame.scss';
+@import 'FAQ.scss';
+@import 'features.scss';
+@import 'termsConditions.scss';
 
 // mixins and variables imports
-// @import './common/_vars.scss';
-// @import './common/_mixins.scss';
-// // reset imports
-// @import './common/_reset.scss';
+@import './common/_vars.scss';
+@import './common/_mixins.scss';
+// reset imports
+@import './common/_reset.scss';
 
 :root {
   font-family: 'Grandstander', 'Inter', 'Akronim' sans-serif;
