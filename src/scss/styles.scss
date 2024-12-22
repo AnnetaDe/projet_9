@@ -1,14 +1,14 @@
 // // componens scss imports
-@import 'header.scss';
-@import 'footer.scss';
-@import 'hero.scss';
-@import 'gallery.scss';
-@import 'privacyPolicy.scss';
-@import 'reviews.scss';
-@import 'aboutTheGame.scss';
-@import 'FAQ.scss';
-@import 'features.scss';
-// @import 'termsConditions.scss';
+@import './header.scss';
+@import './footer.scss';
+@import './hero.scss';
+@import './gallery.scss';
+@import './privacyPolicy.scss';
+@import './reviews.scss';
+@import './aboutTheGame.scss';
+@import './FAQ.scss';
+@import './features.scss';
+@import './termsConditions.scss';
 
 // // mixins and variables imports
 @import './common/_vars.scss';
