@@ -1,4 +1,4 @@
-// componens scss imports
+// // componens scss imports
 @import 'header.scss';
 @import 'footer.scss';
 @import 'hero.scss';
@@ -8,16 +8,15 @@
 @import 'aboutTheGame.scss';
 @import 'FAQ.scss';
 @import 'features.scss';
-@import 'termsConditions.scss';
+// @import 'termsConditions.scss';
 
-// mixins and variables imports
+// // mixins and variables imports
 @import './common/_vars.scss';
 @import './common/_mixins.scss';
-// reset imports
+// // reset imports
 @import './common/_reset.scss';
-
 :root {
-  font-family: 'Grandstander', 'Inter', 'Akronim' sans-serif;
+  font-family: 'Grandstander', 'Inter', 'Akronim', sans-serif;
   font-size: 18px;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -25,15 +24,17 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
 .global-wrapper {
   max-width: 320px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
+
 html {
   scroll-behavior: smooth;
   scroll-snap-stop: always;
 }
+
 .section-title {
   font-family: 'Grandstander';
   font-weight: 700;
@@ -42,7 +43,7 @@ html {
   margin-bottom: 32px;
 }
 
-@media screen and (min-width: 1198.98px) {
+@include media($desktop) {
   .global-wrapper {
     max-width: 1200px;
   }

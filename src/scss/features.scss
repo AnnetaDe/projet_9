@@ -48,7 +48,7 @@
   }
 }
 
-@media screen and (min-width: 1198.98px) {
+@include media($desktop) {
   .features {
     background: $_bg_gradient_reverse;
   }

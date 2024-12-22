@@ -50,7 +50,7 @@
     }
   }
 }
-@media screen and (min-width: 1198.98px) {
+@include media($desktop) {
   .gallery {
     background: $_bg_gradient;
     .global-wrapper {

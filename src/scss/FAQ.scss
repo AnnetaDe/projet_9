@@ -1,14 +1,14 @@
 .faq {
   background: linear-gradient(180deg, #48ebe2 33%, #e1e023 98%);
   padding: 24px 16px 24px 16px;
-    width: 320px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    font-family: "Grandstander", sans-serif;
-    font-size: 14px;
+  width: 320px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  font-family: 'Grandstander', sans-serif;
+  font-size: 14px;
 }
 .faq-list {
   display: flex;
@@ -35,7 +35,7 @@
 // }
 
 .title-text {
-  font-family: "Grandstander", sans-serif;
+  font-family: 'Grandstander', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33333;
@@ -43,17 +43,16 @@
   margin-bottom: 16px;
 }
 
-
-@include media(desktop) {
+@include media($desktop) {
   .faq {
-      min-width: 1200px;
-      width: 100%;
-      height: 100%;
-      padding: 60px 72px;
-      font-size: 18px;
-        line-height: 1.22222;
-    }
-.title-text {
+    min-width: 1200px;
+    width: 100%;
+    height: 100%;
+    padding: 60px 72px;
+    font-size: 18px;
+    line-height: 1.22222;
+  }
+  .title-text {
     font-size: 32px;
     margin-bottom: 32px;
   }

@@ -2,7 +2,7 @@
   width: 320px;
   padding: 24px 16px;
   background: #e1e023;
-  font-family: "Grandstander", sans-serif;
+  font-family: 'Grandstander', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28571;
@@ -28,7 +28,7 @@
   text-align: center;
 }
 
-@include media(desktop) {
+@include media($desktop) {
   .footer {
     width: 100%;
     min-width: 1200px;
