@@ -30,7 +30,7 @@
     }
   }
 }
-@media screen and (min-width: 1198.98px) {
+@include media($desktop) {
   .about-the-game {
     background-color: $_bg_color_yellow;
     .global-wrapper {

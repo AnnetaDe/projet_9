@@ -54,7 +54,7 @@
     }
   }
 }
-@media screen and (min-width: 1198.98px) {
+@include media($desktop) {
   .hero {
     background: url('../img/hero/1x/palm_left.png') no-repeat left,
       url('../img/hero/1x/palm_right.png') no-repeat right, $_bg_color_turquoise;

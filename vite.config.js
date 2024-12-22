@@ -4,10 +4,10 @@ import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import { globalStylesOptions } from './global.styles';
+console.log(glob.sync('./src/*.html'));
 
 export default defineConfig(({ command }) => {
   return {
-
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
@@ -26,6 +26,7 @@ export default defineConfig(({ command }) => {
         },
       },
       outDir: '../dist',
+      emptyOutDir: true,
     },
     plugins: [
       injectHTML(),
@@ -52,7 +53,6 @@ export default defineConfig(({ command }) => {
           additionalData: globalStylesOptions,
         },
       },
-      devSourcemap: true,
     },
   };
 });
