@@ -13,12 +13,14 @@
       rel="stylesheet"
     />
 
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    /> -->
     <script type="module" crossorigin src="/projet_9/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/projet_9/assets/styles-ae60519d.css">
+    <link rel="modulepreload" crossorigin href="/projet_9/assets/vendor-0338de53.js">
+    <link rel="stylesheet" href="/projet_9/assets/vendor-0ded8c46.css">
+    <link rel="stylesheet" href="/projet_9/assets/styles-3254c29d.css">
   </head>
 
   <body>
@@ -97,98 +99,116 @@
     <section id="gallery" class="gallery">
   <div class="global-wrapper">
     <h2 class="section-title">Gallery</h2>
-    <div class="gallery-wrapper">
-      <ul class="gallery-list">
-        <li>
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="/projet_9/assets/image1-2f135fb2.png 1x, /projet_9/assets/image1@2x-da8b1dc2.png 2x"
-            />
-            <source
-              media="(max-width: 1199px)"
-              srcset="/projet_9/assets/image1-96729e82.png 1x, /projet_9/assets/image1@2x-0a5f898d.png 2x"
-            />
-            <img src="/projet_9/assets/image1-2f135fb2.png" alt="img" />
-          </picture>
-        </li>
-        <li>
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="/projet_9/assets/image2-dddc12e3.png 1x, /projet_9/assets/image2@2x-fbd07413.png 2x"
-            />
-            <source
-              media="(max-width: 1199px)"
-              srcset="/projet_9/assets/image2-a92dc175.png 1x, /projet_9/assets/image2@2x-7d764620.png 2x"
-            />
-            <img src="/img/gallery/gallery-1x/image_2.png" alt="img" />
-          </picture>
-        </li>
-        <li>
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="/projet_9/assets/image3-c27f3c55.png 1x, /projet_9/assets/image3@2x-f0187e34.png 2x"
-            />
-            <source
-              media="(max-width: 1199px)"
-              srcset="/projet_9/assets/image3-f4976cef.png 1x, /projet_9/assets/image3@2x-f0a14e5d.png 2x"
-            />
-            <img src="/projet_9/assets/image3-c27f3c55.png" alt="img" />
-          </picture>
-        </li>
-        <li>
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="/projet_9/assets/image4-bd97b5a2.png 1x, /projet_9/assets/image4@2x-398f40a6.png 2x"
-            />
-            <source
-              media="(max-width: 1199px)"
-              srcset="/projet_9/assets/image4-89675711.png 1x, /projet_9/assets/image4@2x-77b48fc6.png 2x"
-            />
-            <img src="/img/gallery/gallery-1x/image_4.png" alt="img" />
-          </picture>
-        </li>
-      </ul>
-      <div class="gallery-swipe">
-        <button class="btn-left">
-          <svg
-            class="gallery-btn desktop-icon"
-            width="52"
-            height="39"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <use href="/projet_9/assets/sprite-f564cb04.svg#btn-left"></use>
-          </svg>
-          <svg
-            class="gallery-btn mobile-icon"
-            width="40"
-            height="40"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <use href="/projet_9/assets/sprite-f564cb04.svg#btn-left-mob"></use>
-          </svg>
-        </button>
-        <button class="btn-right">
-          <svg
-            class="gallery-btn desktop-icon"
-            width="52"
-            height="39"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <use href="/projet_9/assets/sprite-f564cb04.svg#btn-right"></use>
-          </svg>
-          <svg
-            class="gallery-btn mobile-icon"
-            width="40"
-            height="40"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <use href="/projet_9/assets/sprite-f564cb04.svg#btn-right-mob"></use>
-          </svg>
-        </button>
+    <div class="gallery-container">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="gallery-img">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  width="575"
+                  srcset="/projet_9/assets/image1-2f135fb2.png 1x, /projet_9/assets/image1@2x-da8b1dc2.png 2x"
+                />
+                <source
+                  width="255"
+                  media="(max-width: 1199px)"
+                  srcset="/projet_9/assets/image1-96729e82.png 1x, /projet_9/assets/image1@2x-0a5f898d.png 2x"
+                />
+                <img src="/projet_9/assets/image1-2f135fb2.png" alt="img" />
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-img">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="/projet_9/assets/image2-dddc12e3.png 1x, /projet_9/assets/image2@2x-fbd07413.png 2x"
+                />
+                <source
+                  width="255"
+                  media="(max-width: 1199px)"
+                  srcset="/projet_9/assets/image2-a92dc175.png 1x, /projet_9/assets/image2@2x-7d764620.png 2x"
+                />
+                <img src="/img/gallery/gallery-1x/image_2.png" alt="img" />
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-img">
+              <picture>
+                <source
+                  width="575"
+                  media="(min-width: 1200px)"
+                  srcset="/projet_9/assets/image3-c27f3c55.png 1x, /projet_9/assets/image3@2x-f0187e34.png 2x"
+                />
+                <source
+                  width="255"
+                  media="(max-width: 1199px)"
+                  srcset="/projet_9/assets/image3-f4976cef.png 1x, /projet_9/assets/image3@2x-f0a14e5d.png 2x"
+                />
+                <img src="/projet_9/assets/image3-c27f3c55.png" alt="img" />
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-img">
+              <picture>
+                <source
+                  width="575"
+                  media="(min-width: 1200px)"
+                  srcset="/projet_9/assets/image4-bd97b5a2.png 1x, /projet_9/assets/image4@2x-398f40a6.png 2x"
+                />
+                <source
+                  width="255"
+                  media="(max-width: 1199px)"
+                  srcset="/projet_9/assets/image4-89675711.png 1x, /projet_9/assets/image4@2x-77b48fc6.png 2x"
+                />
+                <img src="/img/gallery/gallery-1x/image_4.png" alt="img" />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-btns">
+          <div class="swiper-button-prev">
+            <svg
+              class="gallery-btn mobile-icon"
+              width="40"
+              height="40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <use href="/projet_9/assets/sprite-bc263de3.svg#btn-left-mob"></use>
+            </svg>
+            <svg
+              class="desktop-icon"
+              width="52"
+              height="39"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <use href="/projet_9/assets/sprite-bc263de3.svg#btn-left"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg
+              class="mobile-icon"
+              width="40"
+              height="40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <use href="/projet_9/assets/sprite-bc263de3.svg#btn-right-mob"></use>
+            </svg>
+            <svg
+              class="desktop-icon"
+              width="52"
+              height="39"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <use href="/projet_9/assets/sprite-bc263de3.svg#btn-right"></use>
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -298,7 +318,7 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <use href="/projet_9/assets/sprite-f564cb04.svg#icon1"></use>
+              <use href="/projet_9/assets/sprite-bc263de3.svg#icon1"></use>
             </svg>
             <picture>
               <source
@@ -324,7 +344,7 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <use href="/projet_9/assets/sprite-f564cb04.svg#icon1"></use>
+              <use href="/projet_9/assets/sprite-bc263de3.svg#icon1"></use>
             </svg>
             <picture>
               <source
@@ -352,7 +372,7 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <use href="/projet_9/assets/sprite-f564cb04.svg#icon1"></use>
+              <use href="/projet_9/assets/sprite-bc263de3.svg#icon1"></use>
             </svg>
             <picture>
               <source
@@ -378,7 +398,7 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <use href="/projet_9/assets/sprite-f564cb04.svg#icon1"></use>
+              <use href="/projet_9/assets/sprite-bc263de3.svg#icon1"></use>
             </svg>
             <picture>
               <source
@@ -405,7 +425,7 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <use href="/projet_9/assets/sprite-f564cb04.svg#icon1"></use>
+              <use href="/projet_9/assets/sprite-bc263de3.svg#icon1"></use>
             </svg>
             <picture>
               <source
@@ -431,7 +451,7 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <use href="/projet_9/assets/sprite-f564cb04.svg#icon1"></use>
+              <use href="/projet_9/assets/sprite-bc263de3.svg#icon1"></use>
             </svg>
             <picture>
               <source
@@ -578,7 +598,7 @@
       <div class="list-text">
         <button class="faq-btn">
           <svg class="faq-icon" width="17" height="15">
-            <use href="/projet_9/assets/sprite-f564cb04.svg#icon-triangle"></use>
+            <use href="/projet_9/assets/sprite-bc263de3.svg#icon-triangle"></use>
           </svg>
         </button>
         <p>How do I start the game?</p>
@@ -591,7 +611,7 @@
       <div class="list-text">
         <button class="faq-btn">
           <svg class="faq-icon" width="17" height="15">
-            <use href="/projet_9/assets/sprite-f564cb04.svg#icon-triangle"></use>
+            <use href="/projet_9/assets/sprite-bc263de3.svg#icon-triangle"></use>
           </svg>
         </button>
         <p>Is the game free?</p>
@@ -604,7 +624,7 @@
       <div class="list-text">
         <button class="faq-btn">
           <svg class="faq-icon" width="17" height="15">
-            <use href="/projet_9/assets/sprite-f564cb04.svg#icon-triangle"></use>
+            <use href="/projet_9/assets/sprite-bc263de3.svg#icon-triangle"></use>
           </svg>
         </button>
         <p>Can I play offline?</p>
@@ -618,7 +638,7 @@
       <div class="list-text">
         <button class="faq-btn">
           <svg class="faq-icon" width="17" height="15">
-            <use href="/projet_9/assets/sprite-f564cb04.svg#icon-triangle"></use>
+            <use href="/projet_9/assets/sprite-bc263de3.svg#icon-triangle"></use>
           </svg>
         </button>
         <p>What are the main goals?</p>
@@ -632,7 +652,7 @@
       <div class="list-text">
         <button class="faq-btn">
           <svg class="faq-icon" width="17" height="15">
-            <use href="/projet_9/assets/sprite-f564cb04.svg#icon-triangle"></use>
+            <use href="/projet_9/assets/sprite-bc263de3.svg#icon-triangle"></use>
           </svg>
         </button>
         <p>How do I unlock new upgrades?</p>
@@ -645,7 +665,7 @@
       <div class="list-text">
         <button class="faq-btn">
           <svg class="faq-icon" width="17" height="15">
-            <use href="/projet_9/assets/sprite-f564cb04.svg#icon-triangle"></use>
+            <use href="/projet_9/assets/sprite-bc263de3.svg#icon-triangle"></use>
           </svg>
         </button>
         <p>Are there special events?</p>

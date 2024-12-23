@@ -29,10 +29,19 @@
  <path fill="currentColor"
             d="M0.669 31.331c-0.893-0.893-0.893-2.34 0-3.232l12.098-12.098-12.098-12.098c-0.893-0.893-0.893-2.34 0-3.232s2.34-0.893 3.232 0l13.714 13.714c0.893 0.893 0.893 2.34 0 3.232l-13.714 13.714c-0.893 0.893-2.34 0.893-3.232 0z">
           </path>
+</symbol>
+<symbol id="menu-burger" viewBox="0 0 32 32">
+<path fill="currentColor" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.6" d="M4 8h24M4 16h24M4 24h24" ></path>
+</symbol>
+<symbol id="menu-close" viewBox="0 0 32 32">
+<path fill="currentColor" d="M8.533 25.333l-1.867-1.867 7.467-7.467-7.467-7.467 1.867-1.867 7.467 7.467 7.467-7.467 1.867 1.867-7.467 7.467 7.467 7.467-1.867 1.867-7.467-7.467-7.467 7.467z" ></path>
+</symbol>
   </symbol>
   <symbol id="icon-triangle" viewBox="0 0 36 32">
     <path fill="#e1e023" style="fill: var(--color1, #e1e023)" d="M17.551 0l17.551 30.4h-35.103l17.551-30.4z"></path>
   </symbol>
 
 </svg>
+
+
 
