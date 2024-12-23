@@ -17,7 +17,7 @@
 // @import './common/_reset.scss';
 :root {
   font-family: 'Grandstander', 'Inter', 'Akronim', sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -46,6 +46,7 @@ html {
 @include media($desktop) {
   .global-wrapper {
     max-width: 1200px;
+    font-size: 18px;
   }
   .section-title {
     font-family: 'Grandstander';

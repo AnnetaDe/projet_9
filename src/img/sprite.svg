@@ -36,6 +36,11 @@
 <symbol id="menu-close" viewBox="0 0 32 32">
 <path fill="currentColor" d="M8.533 25.333l-1.867-1.867 7.467-7.467-7.467-7.467 1.867-1.867 7.467 7.467 7.467-7.467 1.867 1.867-7.467 7.467 7.467 7.467-1.867 1.867-7.467-7.467-7.467 7.467z" ></path>
 </symbol>
+  </symbol>
+  <symbol id="icon-triangle" viewBox="0 0 36 32">
+    <path fill="#e1e023" style="fill: var(--color1, #e1e023)" d="M17.551 0l17.551 30.4h-35.103l17.551-30.4z"></path>
+  </symbol>
+
 </svg>
 
 
