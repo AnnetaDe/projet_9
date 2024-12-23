@@ -9,7 +9,7 @@ const swiper = new Swiper('.swiper', {
   modules: [Pagination, Keyboard, Mousewheel, Navigation],
   loop: true,
 
-  allowTouchMove: true,
+  // allowTouchMove: true,
 
   navigation: {
     nextEl: '.swiper-button-next',
@@ -31,6 +31,7 @@ const swiper = new Swiper('.swiper', {
     enabled: true,
     eventsTarget: '.swiper',
   },
+  normalizeSlideIndex: true,
 
   breakpoints: {
     320: {
@@ -51,21 +52,3 @@ const swiper = new Swiper('.swiper', {
     },
   },
 });
-// function updateBulet() {
-//   let bullets = document.querySelectorAll('.swiper-pagination-bullet');
-
-//   bullets.forEach(bullet => {
-//     bullet.style.width = '12px';
-//     bullet.style.height = '12px';
-//     bullet.style.borderRadius = '50%';
-//     bullet.style.backgroundColor = 'green';
-//     bullet.style.margin = '0 8px';
-//   });
-//   const activeIndex = swiper.activeIndex;
-//   bullet[activeIndex].style.backgroundColor = 'red';
-// }
-
-// swiper.nextEl = '.swiper-button-next';
-// swiper.prevEl = '.swiper-button-prev';
-// updateActiveBullet();
-console.log(swiper);
