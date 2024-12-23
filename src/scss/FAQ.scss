@@ -1,6 +1,5 @@
 .faq {
   background: linear-gradient(180deg, #48ebe2 33%, #e1e023 98%);
-  min-width: 320px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -8,8 +7,13 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 24px 16px 24px 16px;
 }
+ .faq-container {
+   width: 320px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
 .faq-list {
   display: flex;
   flex-direction: column;
@@ -20,7 +24,7 @@
 
 .faq-list li {
   width: 238px;
-  margin-left: 25px;
+  // margin-left: 25px;
   position: relative;
 }
 .list-text {
@@ -58,7 +62,11 @@
   top: 0;
   left: -25px;
 }
-.faq-btn:hover .faq-icon {
+.faq-icon {
+  width: 17px;
+  height: 15px;
+}
+.faq-btn:focus .faq-icon {
   transform: rotate(180deg);
   transition: transform 0.3s ease;
 }
@@ -75,19 +83,25 @@
 @include media($desktop) {
   .faq {
     min-width: 1200px;
-    padding: 60px 72px;
     line-height: 1.22222;
+  }
+  .faq-container {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .title-text {
     font-size: 32px;
     margin-bottom: 32px;
   }
   .faq-list {
+    width: 876px;
     gap: 18px;
   }
   .faq-list li {
     width: 848px;
-    margin-left: 25px;
+    // padding-left: 25px;
   }
   .list-text {
     padding: 19px 53px;

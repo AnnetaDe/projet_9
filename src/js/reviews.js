@@ -1,16 +1,14 @@
 // document.addEventListener('DOMContentLoaded', () => {
-//   let swiper; // Зберігаємо екземпляр Swiper
+//   let swiper;
 
 //   function initSwiper() {
-//     // Якщо ширина менша за 1200px, ініціалізуємо Swiper
 //     if (window.innerWidth < 1200) {
 //       if (!swiper) {
-//         // Перевіряємо, чи Swiper ще не створений
 //         swiper = new Swiper('.swiperGallery', {
 //           slidesPerView: 1,
-//           spaceBetween: 30,
+//           spaceBetween: 10,
 //           centeredSlides: true,
-//           initialSlide: 0,
+//           initialSlide: 1,
 //           slideToClickedSlide: true,
 //           loop: false,
 //           navigation: {
@@ -20,21 +18,54 @@
 //         });
 //       }
 //     } else {
-//       // Якщо ширина >= 1200px і Swiper існує, зупиняємо його
 //       if (swiper) {
-//         swiper.destroy(true, true); // Зупиняємо та очищаємо Swiper
-//         swiper = null; // Скидаємо змінну
-
-//         gallery.style.display = 'grid';
-//         gallery.style.gridTemplateColumns = 'repeat(3, 1fr)';
-//         gallery.style.gridTemplateRows = 'repeat(2, 1fr)';
+//         swiper.destroy(true, true);
+//         swiper = null;
 //       }
 //     }
 //   }
 
-//   // Ініціалізація при завантаженні сторінки
 //   initSwiper();
 
-//   // Відстеження зміни розміру вікна
 //   window.addEventListener('resize', initSwiper);
 // });
+
+document.addEventListener('DOMContentLoaded', () => {
+  let swiper;
+
+  function initReviewsLayout() {
+    const swiperGallery = document.querySelector('.swiperGallery');
+    const reviewsGrid = document.querySelector('.reviews-grid');
+
+    if (window.innerWidth >= 1200) {
+      // Вимкнути Swiper
+      if (swiper) {
+        swiper.destroy(true, true);
+        swiper = null;
+      }
+      swiperGallery.style.display = 'none';
+      reviewsGrid.style.display = 'grid';
+    } else {
+      // Увімкнути Swiper
+      reviewsGrid.style.display = 'none';
+      swiperGallery.style.display = 'block';
+      if (!swiper) {
+        swiper = new Swiper('.swiperGallery', {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          centeredSlides: true,
+          initialSlide: 1,
+          slideToClickedSlide: true,
+          loop: false,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      }
+    }
+  }
+
+  initReviewsLayout();
+  window.addEventListener('resize', initReviewsLayout);
+});
