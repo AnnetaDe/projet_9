@@ -1,95 +1,103 @@
 <section id="gallery" class="gallery">
   <div class="global-wrapper">
     <h2 class="section-title">Gallery</h2>
-    <div class="gallery-wrapper">
-      <ul class="gallery-list">
-        <li>
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="
-                /img/gallery/gallery-1x/image1.png    1x,
-                /img/gallery/gallery-2x/image1@2x.png 2x
-              "
-            />
-            <source
-              media="(max-width: 1199px)"
-              srcset="
-                /img/gallery/mob/1x/image1.png    1x,
-                /img/gallery/mob/2x/image1@2x.png 2x
-              "
-            />
-            <img src="/img/gallery/gallery-1x/image1.png" alt="img" />
-          </picture>
-        </li>
-        <li>
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="
-                /img/gallery/gallery-1x/image2.png    1x,
-                /img/gallery/gallery-2x/image2@2x.png 2x
-              "
-            />
-            <source
-              media="(max-width: 1199px)"
-              srcset="
-                /img/gallery/mob/1x/image2.png    1x,
-                /img/gallery/mob/2x/image2@2x.png 2x
-              "
-            />
-            <img src="/img/gallery/gallery-1x/image_2.png" alt="img" />
-          </picture>
-        </li>
-        <li>
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="
-                /img/gallery/gallery-1x/image3.png    1x,
-                /img/gallery/gallery-2x/image3@2x.png 2x
-              "
-            />
-            <source
-              media="(max-width: 1199px)"
-              srcset="
-                /img/gallery/mob/1x/image3.png    1x,
-                /img/gallery/mob/2x/image3@2x.png 2x
-              "
-            />
-            <img src="/img/gallery/gallery-1x/image3.png" alt="img" />
-          </picture>
-        </li>
-        <li>
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="
-                /img/gallery/gallery-1x/image4.png    1x,
-                /img/gallery/gallery-2x/image4@2x.png 2x
-              "
-            />
-            <source
-              media="(max-width: 1199px)"
-              srcset="
-                /img/gallery/mob/1x/image4.png    1x,
-                /img/gallery/mob/2x/image4@2x.png 2x
-              "
-            />
-            <img src="/img/gallery/gallery-1x/image_4.png" alt="img" />
-          </picture>
-        </li>
-      </ul>
-      <div class="gallery-swipe">
-        <button class="btn-left">
-          <svg
-            class="gallery-btn desktop-icon"
-            width="52"
-            height="39"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <use href="/img/sprite.svg#btn-left"></use>
-          </svg>
+    <div class="gallery-container">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="gallery-img">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  width="575"
+                  srcset="
+                    /img/gallery/gallery-1x/image1.png    1x,
+                    /img/gallery/gallery-2x/image1@2x.png 2x
+                  "
+                />
+                <source
+                  width="255"
+                  media="(max-width: 1199px)"
+                  srcset="
+                    /img/gallery/mob/1x/image1.png    1x,
+                    /img/gallery/mob/2x/image1@2x.png 2x
+                  "
+                />
+                <img src="/img/gallery/gallery-1x/image1.png" alt="img" />
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-img">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    /img/gallery/gallery-1x/image2.png    1x,
+                    /img/gallery/gallery-2x/image2@2x.png 2x
+                  "
+                />
+                <source
+                  width="255"
+                  media="(max-width: 1199px)"
+                  srcset="
+                    /img/gallery/mob/1x/image2.png    1x,
+                    /img/gallery/mob/2x/image2@2x.png 2x
+                  "
+                />
+                <img src="/img/gallery/gallery-1x/image_2.png" alt="img" />
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-img">
+              <picture>
+                <source
+                  width="575"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    /img/gallery/gallery-1x/image3.png    1x,
+                    /img/gallery/gallery-2x/image3@2x.png 2x
+                  "
+                />
+                <source
+                  width="255"
+                  media="(max-width: 1199px)"
+                  srcset="
+                    /img/gallery/mob/1x/image3.png    1x,
+                    /img/gallery/mob/2x/image3@2x.png 2x
+                  "
+                />
+                <img src="/img/gallery/gallery-1x/image3.png" alt="img" />
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="gallery-img">
+              <picture>
+                <source
+                  width="575"
+                  media="(min-width: 1200px)"
+                  srcset="
+                    /img/gallery/gallery-1x/image4.png    1x,
+                    /img/gallery/gallery-2x/image4@2x.png 2x
+                  "
+                />
+                <source
+                  width="255"
+                  media="(max-width: 1199px)"
+                  srcset="
+                    /img/gallery/mob/1x/image4.png    1x,
+                    /img/gallery/mob/2x/image4@2x.png 2x
+                  "
+                />
+                <img src="/img/gallery/gallery-1x/image_4.png" alt="img" />
+              </picture>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-prev">
           <svg
             class="gallery-btn mobile-icon"
             width="40"
@@ -98,16 +106,8 @@
           >
             <use href="/img/sprite.svg#btn-left-mob"></use>
           </svg>
-        </button>
-        <button class="btn-right">
-          <svg
-            class="gallery-btn desktop-icon"
-            width="52"
-            height="39"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <use href="/img/sprite.svg#btn-right"></use>
-          </svg>
+        </div>
+        <div class="swiper-button-next">
           <svg
             class="gallery-btn mobile-icon"
             width="40"
@@ -116,8 +116,48 @@
           >
             <use href="/img/sprite.svg#btn-right-mob"></use>
           </svg>
-        </button>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </div>
+
+  <!-- <div class="gallery-swipe-btns">
+    <button class="btn-left">
+      <svg
+        class="gallery-btn desktop-icon"
+        width="52"
+        height="39"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <use href="/img/sprite.svg#btn-left"></use>
+      </svg>
+      <svg
+        class="gallery-btn mobile-icon"
+        width="40"
+        height="40"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <use href="/img/sprite.svg#btn-left-mob"></use>
+      </svg>
+    </button>
+    <button class="btn-right">
+      <svg
+        class="gallery-btn desktop-icon"
+        width="52"
+        height="39"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <use href="/img/sprite.svg#btn-right"></use>
+      </svg>
+      <svg
+        class="gallery-btn mobile-icon"
+        width="40"
+        height="40"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <use href="/img/sprite.svg#btn-right-mob"></use>
+      </svg>
+    </button>
+  </div> -->
 </section>
