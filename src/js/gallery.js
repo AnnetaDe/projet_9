@@ -41,7 +41,7 @@ const swiper = new Swiper('.swiper-topgallery', {
       speed: 500,
       slidesPerView: 1,
       slidesPerGroup: 1,
-      spaceBetween: 30,
+      spaceBetween: 48,
       // centredSlides: true,
       // slidesOffsetBefore: 480,
       // slidesOffsetAfter: -480,

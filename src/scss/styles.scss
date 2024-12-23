@@ -28,8 +28,7 @@
 .global-wrapper {
   max-width: 320px;
   margin: 0 auto;
-
-  outline: 5px solid red;
+  overflow: hidden;
 }
 
 html {
@@ -50,6 +49,7 @@ html {
     max-width: 1200px;
     font-size: 18px;
     outline: 5px solid red;
+    overflow: hidden;
   }
   .section-title {
     font-family: 'Grandstander';

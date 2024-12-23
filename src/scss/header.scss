@@ -5,7 +5,11 @@
   position: fixed;
   margin: 5px 0;
   z-index: 1000;
+  .global-wrapper {
+    padding: 5px;
+  }
   .nav-list {
+    margin: 0 auto;
     display: flex;
     border-radius: 18px;
     justify-content: space-between;

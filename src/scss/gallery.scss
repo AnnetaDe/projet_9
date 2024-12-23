@@ -4,6 +4,7 @@
     padding-top: 24px;
     padding-left: 0px;
     padding-right: 0px;
+    padding-bottom: 0px;
   }
   .global-wrapper .section-title {
     margin: 0 0 16px 16px;
@@ -11,30 +12,25 @@
 }
 .gallery-container {
   margin: 0 auto;
-  outline: 5px solid greenyellow;
 }
 .swiper-topgallery {
   margin: 0 auto;
   width: 100%;
   position: relative;
   overflow: hidden;
-  padding-right: 24px;
-  padding-left: 24px;
-  .swiper-wrapper {
-    margin-bottom: 24px;
-    margin-top: 24px;
-  }
+  padding-right: 48px;
+  padding-left: 48px;
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
   width: 225px;
-  height: 120px;
+  height: 105px;
 }
 
 .gallery-img img {
-  aspect-ratio: 16/9;
+  aspect-ratio: 16/8;
   display: block;
   width: 100%;
   object-fit: cover;
@@ -47,19 +43,14 @@
   width: 24px;
   height: 24px;
 
-  bottom: 40%;
+  bottom: 45%;
   z-index: 10;
   color: $_black_text;
   background-color: transparent;
-
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
 }
 
 .swiper-button-next-topgallery {
-  outline: 5px solid red;
-  right: 7px;
+  right: 16px;
 
   .desktop-icon {
     visibility: hidden;
@@ -67,8 +58,7 @@
 }
 
 .swiper-button-prev-topgallery {
-  left: 5px;
-  outline: 5px solid rgb(0, 255, 213);
+  left: 16px;
   .desktop-icon {
     visibility: hidden;
   }
@@ -82,25 +72,22 @@
 @include media($desktop) {
   .gallery {
     background: $_bg_gradient;
-
     .global-wrapper {
       padding-top: 60px;
-      padding-left: 0;
-      padding-right: 0;
-    }
-    .gallery-container {
-      margin: 0 auto;
-      padding: 24px 0;
+
+      .section-title {
+        margin-bottom: 34px;
+        margin-left: 72px;
+      }
     }
   }
-  .global-wrapper .section-title {
-    margin-left: 72px;
-    margin-bottom: 34px;
+  .gallery-container {
+    margin: 0 auto;
+    padding: 24px 0;
   }
   .swiper-topgallery {
     margin: 0 auto;
     position: relative;
-    outline: 10px solid red;
     width: 100%;
     padding-right: 0px;
     padding-left: 0px;
