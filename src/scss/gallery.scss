@@ -2,114 +2,225 @@
   background: $_bg_gradient;
   .global-wrapper {
     padding-top: 24px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .global-wrapper .section-title {
     margin: 0 0 16px 16px;
   }
-  .gallery-wrapper {
-    overflow: hidden;
+  .gallery-container {
+    margin: 0 auto;
+  }
+  .swiper {
     width: 100%;
+    height: 100%;
+  }
+  .swiper-wrapper {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    margin-top: 24px;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
     position: relative;
   }
-  .gallery-list {
-    display: flex;
-    gap: 10px;
-    li {
-      min-width: 100%;
-      flex-shrink: 0;
-    }
 
-    img {
-      width: 70%;
-      height: auto;
-      display: block;
-    }
+  .gallery-img {
+    padding-left: 48px;
+    padding-right: 48px;
+    overflow: hidden;
   }
-}
-.gallery-swipe {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  .desktop-icon {
-    display: none;
+
+  .gallery-img img {
+    aspect-ratio: 16/9;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-  .mobile-icon {
-    display: inline-block;
-  }
-  .btn-left,
-  .btn-right {
-    background: transparent;
-    border: none;
-    cursor: pointer;
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    z-index: 10;
     color: $_black_text;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
 
-    &:hover {
-      .gallery-btn {
-        color: darkgreen;
-      }
+  .swiper-button-next {
+    right: 30px;
+    .desktop-icon {
+      visibility: hidden;
     }
   }
+
+  .swiper-button-prev {
+    left: 30px;
+    .desktop-icon {
+      visibility: hidden;
+    }
+  }
+
+  .swiper-pagination {
+    visibility: hidden;
+  }
 }
+
+// .gallery-swipe-btns {
+//   display: flex;
+//   justify-content: center;
+//   gap: 16px;
+//   .desktop-icon {
+//     display: none;
+//   }
+//   .mobile-icon {
+//     display: inline-block;
+//   }
+//   .btn-left,
+//   .btn-right {
+//     background: transparent;
+//     border: none;
+//     cursor: pointer;
+//     color: $_black_text;
+
+//     &:hover {
+//       .gallery-btn {
+//         color: darkgreen;
+//       }
+//     }
+//   }
+// }
+
 @include media($desktop) {
   .gallery {
     background: $_bg_gradient;
+
     .global-wrapper {
       padding-top: 60px;
       padding-left: 0;
       padding-right: 0;
     }
-
-    .global-wrapper .section-title {
-      margin-left: 72px;
-      margin-bottom: 34px;
-    }
-    .gallery-wrapper {
-      width: 100%;
+  }
+  .global-wrapper .section-title {
+    margin-left: 72px;
+    margin-bottom: 34px;
+  }
+  .gallery-container {
+    height: 100%;
+    margin: 0 auto;
+    padding: 24px 0;
+  }
+  .swiper-wrapper {
+    height: 100%;
+    position: relative;
+    padding-bottom: 50px;
+  }
+  .gallery {
+    .swiper {
       position: relative;
-    }
-    .gallery-list {
-      outline: 1px solid red;
-      display: flex;
-      gap: 10px;
-      overflow: auto;
-      margin-bottom: 72px;
-
-      li {
-        min-width: auto;
-        padding: 16px 0;
-        height: 282px;
-        flex-shrink: 0;
-      }
-      img {
-        height: 100%;
-        width: auto;
+      .swiper-wrapper {
+        margin-bottom: 100px;
+        position: relative;
       }
     }
   }
-  .gallery-swipe {
-    outline: 1px solid yellow;
-    width: 25%;
-    // display: flex;
-    // gap: 16px;
-    .btn-left,
-    .btn-right {
+  .swiper {
+    width: 100%;
+    height: 100%;
+
+    .swiper-btns {
+      position: absolute;
+      outline: 3px solid red;
+      width: 260px;
+      height: 60px;
+      bottom: 25px;
+      left: 39%;
+    }
+    .swiper-pagination {
+      visibility: visible;
+      position: absolute;
+      width: 50px;
+      height: 60px;
+
+      outline: 1px solid red;
+
+      .swiper-pagination-bullet {
+        background: #62bc05;
+        border-radius: 50%;
+        opacity: 1;
+        width: 24px;
+        height: 24px;
+      }
+      .swiper-pagination-bullet-active {
+        background: #2b7908;
+      }
+    }
+
+    .swiper-button-prev {
       background: transparent;
-      display: block;
       border: none;
-      cursor: pointer;
-      color: green;
+      color: #62bc05;
+      width: 52px;
+      height: 40px;
+      .desktop-icon {
+        display: inline-block;
+        visibility: visible;
+      }
       .mobile-icon {
         display: none;
       }
-      .desktop-icon {
-        display: block;
-      }
+    }
 
-      &:hover {
-        .gallery-btn {
-          color: darkgreen;
-        }
+    .swiper-button-next {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+
+      color: #62bc05;
+      width: 52px;
+      height: 40px;
+      .desktop-icon {
+        display: inline-block;
+        visibility: visible;
+      }
+      .mobile-icon {
+        display: none;
       }
     }
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover {
+      color: #2b7908;
+    }
+  }
+
+  .swiper-slide {
+    background-size: cover;
+  }
+  .gallery-img {
+    width: 525px;
+  }
+  .gallery-img img {
+    width: 100%;
+    display: block;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .gallery-container .swiper-slide-next {
+    .gallery-img {
+      transform: scale(1.1);
+      transition: transform 0.5s ease, outline 0.5s ease;
+    }
+  }
+
+  .gallery-container .swiper-slide {
+    margin: 0 10px;
+    transition: margin 0.5s ease;
   }
 }
