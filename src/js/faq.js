@@ -5,22 +5,16 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       const parentLi = btn.closest('li');
       const hoverContainer = parentLi.querySelector('.hover-container');
-
-      document
-        .querySelectorAll('.hover-container.active')
-        .forEach(container => {
-          if (container !== hoverContainer) {
-            container.classList.remove('active');
-            const otherBtn = container.closest('li').querySelector('.faq-btn');
-            otherBtn.setAttribute('aria-expanded', 'false');
-          }
-        });
+      const faqIcon = btn.querySelector('.faq-icon');
 
       hoverContainer.classList.toggle('active');
-      btn.setAttribute(
-        'aria-expanded',
-        hoverContainer.classList.contains('active')
-      );
+
+      if (hoverContainer.classList.contains('active')) {
+        faqIcon.style.transform = 'rotate(180deg)';
+      } else {
+        faqIcon.style.transform = 'rotate(0deg)';
+      }
     });
   });
 });
+

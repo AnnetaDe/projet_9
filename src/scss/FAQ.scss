@@ -9,10 +9,11 @@
   margin: 0 auto;
 }
 .faq-container {
-  width: 320px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 .faq-list {
   display: flex;
@@ -20,6 +21,7 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
+  padding-left: 25px;
 }
 
 .faq-list li {
@@ -68,11 +70,6 @@
   transition: transform 0.3s ease;
   box-shadow: $_components_box_shadow;
 }
-.faq-btn:focus .faq-icon,
-.faq-btn:hover .faq-icon {
-  transform: rotate(180deg);
-  transition: transform 0.3s ease;
-}
 
 .title-text {
   font-family: 'Grandstander', sans-serif;
@@ -88,12 +85,7 @@
     min-width: 1200px;
     line-height: 1.22222;
   }
-  .faq-container {
-    width: 1200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+
   .title-text {
     font-size: 32px;
     margin-bottom: 32px;
