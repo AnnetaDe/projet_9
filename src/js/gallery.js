@@ -5,50 +5,52 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper-topgallery', {
   modules: [Pagination, Keyboard, Mousewheel, Navigation],
   loop: true,
 
   // allowTouchMove: true,
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next-topgallery',
+    prevEl: '.swiper-button-prev-topgallery',
   },
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination-topgallery',
     type: 'bullets',
     dynamicBullets: true,
-    bulletClass: 'swiper-pagination-bullet',
+    bulletElement: 'button',
+    bulletClass: 'swiper-pagination-circle',
+    bulletActiveClass: 'swiper-pagination-circle-active',
+    clickable: true,
   },
 
   keyboard: {
     enabled: true,
     onlyInViewport: true,
     pageUpDown: true,
+    eventsTarget: '.swiper-topgallery',
   },
   mousewheel: {
     enabled: true,
-    eventsTarget: '.swiper',
+    eventsTarget: '.swiper-topgallery',
   },
-  normalizeSlideIndex: true,
 
   breakpoints: {
     320: {
       speed: 500,
       slidesPerView: 1,
       slidesPerGroup: 1,
-      centredSlides: true,
-      slidesOffsetBefore: 480,
-      slidesOffsetAfter: -480,
+      spaceBetween: 48,
+      // centredSlides: true,
+      // slidesOffsetBefore: 480,
+      // slidesOffsetAfter: -480,
     },
     1200: {
-      spaceBetween: 450,
-      slidesOffsetBefore: 240,
-      slidesOffsetAfter: 240,
-      centredSlides: false,
       slidesPerGroup: 1,
-      slidesPerView: 3,
+      slidesPerView: 0.5 + 1 + 0.5,
+      centeredSlides: true,
+      spaceBetween: 20,
     },
   },
 });

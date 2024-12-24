@@ -1,35 +1,3 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//   let swiper;
-
-//   function initSwiper() {
-//     if (window.innerWidth < 1200) {
-//       if (!swiper) {
-//         swiper = new Swiper('.swiperGallery', {
-//           slidesPerView: 1,
-//           spaceBetween: 10,
-//           centeredSlides: true,
-//           initialSlide: 1,
-//           slideToClickedSlide: true,
-//           loop: false,
-//           navigation: {
-//             nextEl: '.swiper-button-next',
-//             prevEl: '.swiper-button-prev',
-//           },
-//         });
-//       }
-//     } else {
-//       if (swiper) {
-//         swiper.destroy(true, true);
-//         swiper = null;
-//       }
-//     }
-//   }
-
-//   initSwiper();
-
-//   window.addEventListener('resize', initSwiper);
-// });
-
 document.addEventListener('DOMContentLoaded', () => {
   let swiper;
 
