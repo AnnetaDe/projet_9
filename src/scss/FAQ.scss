@@ -68,7 +68,8 @@
   transition: transform 0.3s ease;
   box-shadow: $_components_box_shadow;
 }
-.faq-btn[aria-expanded='true'] .faq-icon {
+.faq-btn:focus .faq-icon,
+.faq-btn:hover .faq-icon {
   transform: rotate(180deg);
   transition: transform 0.3s ease;
 }
