@@ -42,6 +42,7 @@ const swiper = new Swiper('.swiper-topgallery', {
       spaceBetween: 50,
     },
     1200: {
+      speed: 500,
       slidesPerGroup: 1,
       slidesPerView: 0.5 + 1 + 0.5,
       centeredSlides: true,

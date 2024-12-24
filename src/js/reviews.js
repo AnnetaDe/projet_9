@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
           centeredSlides: true,
           initialSlide: 1,
           slideToClickedSlide: true,
+          speed: 500,
 
           loop: true,
           navigation: {
