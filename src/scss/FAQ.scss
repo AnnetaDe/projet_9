@@ -65,7 +65,8 @@
   width: 17px;
   height: 15px;
 }
-.faq-btn:focus .faq-icon {
+.faq-btn:focus .faq-icon,
+.faq-btn:hover .faq-icon {
   transform: rotate(180deg);
   transition: transform 0.3s ease;
 }
