@@ -1,6 +1,6 @@
 <header class="header">
   <div class="global-wrapper">
-    <div class="mob-menu">
+    <div class="mobile-menu">
       <div class="favicon_mob">
         <a href="/" class="nav-link">
           <picture>
@@ -9,8 +9,12 @@
           </picture>
         </a>
       </div>
-      <div class="menu-button">
-        <button aria-label="Open Navigation Menu">menu</button>
+      <div>
+        <button class="menu-button-open" aria-label="Open Navigation Menu">
+          <svg class="mobile-menu-btn-icon" width="40" height="40">
+            <use href="/img/sprite.svg#menu-burger"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <nav class="nav">
@@ -39,6 +43,39 @@
           <a href="#reviews" class="nav-link">Reviews</a>
         </li>
         <li class="nav-item">
+          <a href="#faq" class="nav-link">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="mobile-menu-drop">
+    <div class="menu-button-container">
+      <button class="menu-button-close" aria-label="Close Navigation Menu">
+        <svg class="mobile-menu-btn-icon" width="40" height="40">
+          <use href="/img/sprite.svg#menu-close"></use>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-menu-nav">
+      <ul class="nav-list-mob">
+        <li class="nav-item-mob">
+          <a href="/" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item-mob">
+          <a href="#gallery" class="nav-link">Gallery</a>
+        </li>
+        <li class="nav-item-mob">
+          <a href="#aboutTheGame" class="nav-link">About the game </a>
+        </li>
+
+        <li class="nav-item-mob">
+          <a href="#features" class="nav-link">Features</a>
+        </li>
+        <li class="nav-item-mob">
+          <a href="#reviews" class="nav-link">Reviews</a>
+        </li>
+        <li class="nav-item-mob">
           <a href="#faq" class="nav-link">FAQ</a>
         </li>
       </ul>
