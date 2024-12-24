@@ -102,7 +102,6 @@
       width: 72px;
       height: 24px;
       bottom: 25px;
-      outline: 1px solid rgb(255, 0, 217);
     }
     .swiper-pagination-circle {
       margin-left: 4px;
@@ -110,10 +109,11 @@
       border: transparent;
       border-radius: 50%;
       opacity: 1;
-      padding: 8px;
+      padding: 5px;
     }
     .swiper-pagination-circle-active {
       background: #2b7908;
+      padding: 8px;
     }
   }
   .gallery-img img {
@@ -145,8 +145,7 @@
     width: 52px;
     height: 40px;
     bottom: 5px;
-    outline: 2px solid blue;
-    left: 40%;
+    left: 41%;
     .desktop-icon {
       display: inline-block;
       visibility: visible;
@@ -161,10 +160,10 @@
     border: none;
     cursor: pointer;
     bottom: 5px;
-    right: 40%;
+    right: 41%;
 
     color: #62bc05;
-    width: 52px;
+    width: 40px;
     height: 40px;
     .desktop-icon {
       display: inline-block;

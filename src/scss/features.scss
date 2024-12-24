@@ -18,7 +18,6 @@
   gap: 8px;
 
   .features-img-container {
-    // outline: 1px solid red;
     width: 100px;
     margin-bottom: 18px;
     picture {
@@ -73,13 +72,11 @@
     .features-img-container {
       display: block;
       position: relative;
-      outline: 1px solid red;
       width: 312px;
       height: 260px;
       margin-bottom: 12px;
       overflow: hidden;
       picture {
-        outline: 1px solid red;
         display: block;
         position: absolute;
         object-fit: cover;
