@@ -26,12 +26,13 @@
   height: auto;
   display: block;
   overflow: hidden;
-}
 
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
 }
 
 .item-reviews {
