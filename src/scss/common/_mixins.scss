@@ -16,7 +16,6 @@
     }
   }
 }
-// font: size and line height
 @mixin font($_fsz, $_lnh) {
   font-size: #{$_fsz}px;
   $result: math.div($_lnh, $_fsz);

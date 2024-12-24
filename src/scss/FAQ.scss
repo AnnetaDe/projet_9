@@ -8,12 +8,12 @@
   align-items: center;
   margin: 0 auto;
 }
- .faq-container {
-   width: 320px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
- }
+.faq-container {
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .faq-list {
   display: flex;
   flex-direction: column;
@@ -24,7 +24,6 @@
 
 .faq-list li {
   width: 238px;
-  // margin-left: 25px;
   position: relative;
 }
 .list-text {
@@ -101,7 +100,6 @@
   }
   .faq-list li {
     width: 848px;
-    // padding-left: 25px;
   }
   .list-text {
     padding: 19px 53px;

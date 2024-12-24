@@ -9,8 +9,6 @@ const swiper = new Swiper('.swiper-topgallery', {
   modules: [Pagination, Keyboard, Mousewheel, Navigation],
   loop: true,
 
-  // allowTouchMove: true,
-
   navigation: {
     nextEl: '.swiper-button-next-topgallery',
     prevEl: '.swiper-button-prev-topgallery',
@@ -41,10 +39,7 @@ const swiper = new Swiper('.swiper-topgallery', {
       speed: 500,
       slidesPerView: 1,
       slidesPerGroup: 1,
-      spaceBetween: 48,
-      // centredSlides: true,
-      // slidesOffsetBefore: 480,
-      // slidesOffsetAfter: -480,
+      spaceBetween: 50,
     },
     1200: {
       slidesPerGroup: 1,

@@ -14,11 +14,21 @@ document.addEventListener('DOMContentLoaded', () => {
     body.classList.remove('no-scroll');
   });
 
-  const menuLinks = document.querySelectorAll('.mobile-menu-list-link');
+  const menuLinks = document.querySelectorAll('.nav-link-mob');
   menuLinks.forEach(link => {
     link.addEventListener('click', () => {
       mobileMenu.classList.remove('is-open');
       body.classList.remove('no-scroll');
     });
+  });
+  document.addEventListener('click', event => {
+    const isClickInside =
+      mobileMenu.contains(event.target) ||
+      openMenuBtn.contains(event.target) ||
+      closeMenuBtn.contains(event.target);
+    if (!isClickInside) {
+      mobileMenu.classList.remove('is-open');
+      body.classList.remove('no-scroll');
+    }
   });
 });

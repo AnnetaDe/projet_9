@@ -1,4 +1,4 @@
-// // componens scss imports
+// componens scss imports
 @import './header.scss';
 @import './footer.scss';
 @import './hero.scss';
@@ -10,11 +10,6 @@
 @import './features.scss';
 @import './termsConditions.scss';
 
-// // // mixins and variables imports
-// @import './common/_vars.scss';
-// @import './common/_mixins.scss';
-// // // reset imports
-// @import './common/_reset.scss';
 :root {
   font-family: 'Grandstander', 'Inter', 'Akronim', sans-serif;
   font-size: 14px;
@@ -34,6 +29,7 @@
 html {
   scroll-behavior: smooth;
   scroll-snap-stop: always;
+  scroll-padding: 64px 0 72px 0;
 }
 
 .section-title {
