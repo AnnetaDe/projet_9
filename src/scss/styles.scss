@@ -37,7 +37,7 @@ html {
   font-weight: 700;
   color: $_black_text;
   @include font(18, 24);
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 }
 
 @include media($desktop) {
@@ -45,12 +45,12 @@ html {
     max-width: 1200px;
     font-size: 18px;
     overflow: hidden;
-  }
-  .section-title {
-    font-family: 'Grandstander';
-    font-weight: 500;
-    color: $_black_text;
-    @include font(32, 24);
-    margin-bottom: 32px;
+    .section-title {
+      font-family: 'Grandstander';
+      font-weight: 700;
+      color: $_black_text;
+      @include font(32, 24);
+      margin-bottom: 34px;
+    }
   }
 }

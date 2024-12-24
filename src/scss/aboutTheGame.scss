@@ -35,6 +35,9 @@
     background-color: $_bg_color_yellow;
     .global-wrapper {
       padding: 60px 72px 64px 72px;
+      .section-title {
+        margin-bottom: 34px;
+      }
 
       .about-the-game-list {
         display: grid;
