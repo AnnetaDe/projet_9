@@ -94,7 +94,7 @@
     padding-left: 0px;
 
     .swiper-wrapper {
-      margin-bottom: 100px;
+      margin-bottom: 80px;
       margin-top: 24px;
       .swiper-slide {
         background-position: center;
@@ -106,9 +106,7 @@
     .swiper-pagination-topgallery {
       visibility: visible;
       position: absolute;
-      width: 72px;
       height: 24px;
-      bottom: 30px;
     }
     .swiper-pagination-circle {
       margin-left: 4px;
@@ -120,7 +118,7 @@
     }
     .swiper-pagination-circle-active {
       background: #2b7908;
-      padding: 8px;
+      padding: 7px;
     }
   }
   .gallery-img img {
