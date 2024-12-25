@@ -5,33 +5,36 @@
     padding: 85px 1px 1px 1px;
     .hero-content {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
       justify-content: center;
       align-items: center;
+      padding-top: 12px;
+      padding-bottom: 8px;
 
       background: url('../img/hero/mob/man.png') no-repeat left bottom,
         url('../img/hero/mob/girl.png') no-repeat right bottom;
       .hero-center {
         justify-items: center;
+        grid-column: 2;
         text-align: center;
-
         h1 {
           font-family: 'Akronim';
           @include font(48, 24);
           color: $_accent_orange;
           margin-bottom: 16px;
-          margin-top: 16px;
         }
         .hero-title-container {
-          width: 154px;
           margin-bottom: 32px;
-          margin: auto 0;
+          margin-bottom: 32px;
+
           text-align: center;
           justify-items: center;
 
           .hero-title {
             font-family: 'Grandstander';
             font-weight: 500;
+            padding-left: 25px;
+            padding-right: 25px;
             color: $_black_text;
             @include font(14, 18);
           }
