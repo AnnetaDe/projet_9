@@ -1,8 +1,11 @@
 .header {
   background-color: var($_header_color);
-  width: 100%;
+  width: 320px;
+
   padding: 0 16px;
   position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
   margin: 5px 0;
   z-index: 10;
   .global-wrapper {
