@@ -6,6 +6,8 @@
     .hero-content {
       display: grid;
       grid-template-columns: 1fr;
+      justify-content: center;
+      align-items: center;
 
       background: url('../img/hero/mob/man.png') no-repeat left bottom,
         url('../img/hero/mob/girl.png') no-repeat right bottom;

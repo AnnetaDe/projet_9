@@ -73,8 +73,13 @@
       background: transparent;
       border: none;
       cursor: pointer;
-      stroke: $_black_text;
-      color: $_black_text;
+      // stroke: $_black_text;
+      // color: $_black_text;
+      .mobile-menu-btn-icon {
+        width: 40px;
+        height: 40px;
+        color: #000;
+      }
     }
   }
   .mobile-menu-drop.is-open {
