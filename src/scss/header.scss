@@ -2,7 +2,7 @@
   background-color: var($_header_color);
   width: 320px;
 
-  padding: 0 16px;
+  // padding: 0 16px;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
@@ -96,13 +96,6 @@
   .favicon {
     display: none;
   }
-  // .nav-button-wrapper {
-  //   background: transparent;
-  //   button {
-  //     width: 50px;
-  //     height: 50px;
-  //   }
-  // }
 
   .favicon_mob {
     width: 50px;
@@ -111,7 +104,7 @@
 }
 @include media($desktop) {
   .global-wrapper {
-    max-width: 1200px;
+    width: 1200px;
   }
 
   .header {
