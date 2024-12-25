@@ -2,16 +2,48 @@
   background-color: $_bg_color_yellow;
   .global-wrapper {
     padding: 24px 16px;
-    .section-title {
-      margin-bottom: 16px;
+  }
+  .about-the-game-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    .about-the-game-li {
+      .img-container {
+        max-width: 100%;
+        .picture {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .about-the-game-text {
+        text-align: center;
+        font-family: 'Grandstander';
+        font-weight: 400;
+        @include font(14, 18);
+        padding: 0 16px;
+      }
     }
+  }
+}
+// desktop
+@include media($desktop) {
+  .about-the-game {
+    background-color: $_bg_color_yellow;
+    .global-wrapper {
+      padding: 60px 72px 64px 72px;
+    }
+
     .about-the-game-list {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
       .about-the-game-li {
+        grid-template-rows: 12fr 4fr;
+
         .img-container {
           max-width: 100%;
+          width: 519px;
           .picture {
             display: block;
             width: 100%;
@@ -21,49 +53,9 @@
 
         .about-the-game-text {
           text-align: center;
-          font-family: 'Grandstander';
           font-weight: 400;
-          @include font(14, 18);
+          @include font(18, 22);
           padding: 0 16px;
-        }
-      }
-    }
-  }
-}
-@include media($desktop) {
-  .about-the-game {
-    background-color: $_bg_color_yellow;
-    .global-wrapper {
-      padding: 60px 72px 64px 72px;
-      .section-title {
-        margin-bottom: 34px;
-      }
-
-      .about-the-game-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 33px;
-        .about-the-game-li {
-          display: grid;
-          grid-template-rows: 12fr 4fr;
-
-          .img-container {
-            max-width: 100%;
-            width: 519px;
-            .picture {
-              display: block;
-              width: 100%;
-              height: auto;
-            }
-          }
-
-          .about-the-game-text {
-            text-align: center;
-            font-family: 'Grandstander';
-            font-weight: 400;
-            @include font(18, 22);
-            padding: 0 16px;
-          }
         }
       }
     }

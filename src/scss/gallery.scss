@@ -6,7 +6,7 @@
     padding-right: 0px;
     padding-bottom: 0px;
   }
-  .global-wrapper .section-title {
+  .section-title {
     margin: 0 0 16px 16px;
   }
 }
@@ -73,12 +73,10 @@
     background: $_bg_gradient;
     .global-wrapper {
       padding-top: 60px;
-
-      .section-title {
-        margin-bottom: 34px;
-        margin-left: 72px;
-      }
     }
+  }
+  .section-title {
+    margin-left: 72px;
   }
   .gallery-container {
     margin: 0 auto;

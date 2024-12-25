@@ -8,8 +8,8 @@
   height: 100%;
   margin: 0 auto;
   font-family: 'Grandstander', sans-serif;
-  padding: 24px 16px 10px 16px;
-  background: linear-gradient(180deg, #48ebe2 33%, #e1e023 98%);
+  background: $_bg_gradient;
+  position: relative;
 }
 
 .home {
@@ -27,16 +27,14 @@
 .link-home {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.33333;
+  @include font(12, 16);
   display: flex;
   align-items: center;
   gap: 4px;
 }
 .privacy-title {
   font-weight: 700;
-  font-size: 18px;
-  line-height: 1.33333;
+  @include font(18, 24);
   margin-bottom: 16px;
   text-align: start;
 }
@@ -46,17 +44,14 @@
 .privacy-text p {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.28571;
+  @include font(14, 18);
   margin-bottom: 16px;
 }
 .privacy-text p span {
   font-weight: 500;
 }
 .privacy-text ul {
-  font-family: 'Grandstander', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.28571;
+  @include font(14, 18);
   margin-bottom: 16px;
   list-style: disc;
   padding: 0 16px;
@@ -70,6 +65,7 @@
 .footer-previcy {
   padding: 40px 0;
 }
+
 @include media($desktop) {
   .privacy-and-terms {
     min-width: 1200px;
@@ -97,5 +93,4 @@
   .footer-previcy {
     padding: 40px 0;
   }
-
 }

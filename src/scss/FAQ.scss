@@ -13,7 +13,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 .faq-list {
   display: flex;
@@ -71,27 +70,14 @@
   box-shadow: $_components_box_shadow;
 }
 
-.title-text {
-  font-family: 'Grandstander', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.33333;
-  text-align: start;
-  margin-bottom: 16px;
-}
-
+// desktop
 @include media($desktop) {
   .faq {
     min-width: 1200px;
-    line-height: 1.22222;
   }
 
-  .title-text {
-    font-size: 32px;
-    margin-bottom: 32px;
-  }
   .faq-list {
-    width: 876px;
+    max-width: 876px;
     gap: 18px;
   }
   .faq-list li {

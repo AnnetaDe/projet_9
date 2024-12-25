@@ -1,24 +1,26 @@
+.footer-container {
+  width: 100%;
+  height: 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .footer {
   width: 100%;
   height: 100%;
   background: #e1e023;
-  font-family: 'Grandstander', sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.28571;
-  color: #000;
+  @include font(14, 18);
+
+  color: $_black_text;
   margin-top: -2px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.footer-link {
+.footer-links {
   display: flex;
   flex-direction: column;
   justify-content: start;
   gap: 6px;
-  margin-bottom: 24px;
 }
 
 .footer-item {
@@ -27,14 +29,13 @@
 }
 
 .footer-text {
-  font-size: 12px;
-  line-height: 1.5;
+  @include font(12, 16);
+
   text-align: center;
 }
 
 @include media($desktop) {
   .footer {
-    min-width: 1200px;
     width: 100%;
     height: 100%;
   }
@@ -42,8 +43,9 @@
     width: 1200px;
     padding: 15px 72px 40px 72px;
   }
-  .footer-link {
-    text-align: end;
+  .footer-links {
+    display: block;
+    justify-items: end;
   }
   .footer-item {
     font-size: 20px;

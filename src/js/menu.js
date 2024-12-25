@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileMenu = document.querySelector('.mobile-menu-drop');
   const openMenuBtn = document.querySelector(' .menu-button-open');
   const closeMenuBtn = document.querySelector('.menu-button-close ');
+
   const body = document.body;
+  console.log(body);
 
   openMenuBtn.addEventListener('click', () => {
     mobileMenu.classList.add('is-open');
@@ -21,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
       body.classList.remove('no-scroll');
     });
   });
+
   document.addEventListener('click', event => {
     const isClickInside =
       mobileMenu.contains(event.target) ||
