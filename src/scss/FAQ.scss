@@ -31,8 +31,12 @@
   background: #62bc05;
   padding: 12px 0 12px 18px;
   border-radius: 36px;
+  @include font(14, 18);
+  font-weight: 400;
 }
 .hover-container {
+  font-weight: 400;
+
   margin: 0 auto;
   padding: 14px;
   display: none;
@@ -67,10 +71,7 @@
   width: 17px;
   height: 15px;
   transition: transform 0.3s ease;
-  stroke: #e1e023 ;
-
-
-
+  stroke: #e1e023;
 }
 
 // desktop

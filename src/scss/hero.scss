@@ -50,7 +50,7 @@
           width: 121px;
           height: 41px;
           font-family: 'Inter';
-          box-shadow: $_components_box_shadow;
+
           @include font(14, 16);
           img {
             margin-left: 2px;
@@ -58,6 +58,7 @@
         }
         .hero-button:hover {
           background: #34a853;
+          box-shadow: 0px 0px 10px 8px #b6d794;
         }
       }
     }
